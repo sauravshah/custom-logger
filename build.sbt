@@ -2,7 +2,7 @@ name := """custom-logger"""
 
 version := "1.0-SNAPSHOT"
 
-lazy val root = (project in file(".")).enablePlugins(PlayScala)
+lazy val root = (project in file(".")).enablePlugins(PlayScala).disablePlugins(PlayLogback)
 
 scalaVersion := "2.11.7"
 
